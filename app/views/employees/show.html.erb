@@ -1,7 +1,8 @@
-<h1><%= "#{@employee.full_name}, alias #{@employee.alias}" %></h1>
+<h1><%= @employee.full_name %></h1>
+<h2>Alias: <%= @employee.alias %></h2>
 <h2><%= @employee.title %></h2>
 <h2><%= @employee.office %></h2>
 <h3>Dog: <%= @employee.dog.name %></h3>
 
-<%= image_tag(@employee.img_url) %>
+<%= image_tag @employee.img_url %>
 
