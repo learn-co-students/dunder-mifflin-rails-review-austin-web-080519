@@ -7,6 +7,6 @@
 <label>Owners:</label>
 <ul>
 <% @employees.each do |employee| %>
-    <li><%= employee.full_name %></li>
+    <li><%= link_to employee.full_name, employee_path(employee) %></li>
 <% end %>
 </ul>
